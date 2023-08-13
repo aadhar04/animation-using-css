@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+.box {
+  background-color: rgb(255, 0, 0);
+  height: 100px;
+  width: 100px;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: transform 0.8s, background-color 0.8s, color 0.8s; */
+  transition: all 0.8s;
+}
+
+.box:hover {
+  transform: rotate(90deg);
+  background-color: blue;
+  color: white;
+}
+
+/*animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in 2;
+}
